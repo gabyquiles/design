@@ -10,14 +10,26 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "build": "vite build && tsc"
+    "build": "vite build && tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "Gabriel Quiles",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.1",
+    "@storybook/addon-interactions": "^7.5.1",
+    "@storybook/addon-links": "^7.5.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.1",
+    "@storybook/react": "^7.5.1",
+    "@storybook/react-vite": "^7.5.1",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.32",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.1",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
   },
@@ -26,5 +38,5 @@
   },
   "publishConfig": {
     "@gabyquiles:registry": "https://npm.pkg.github.com"
-    }
+  }
 }

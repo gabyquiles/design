@@ -20,3 +20,19 @@ export function Card ({
       </article>
     );
 }
+
+// export const Card = () => (<article>
+//   Hello World
+//   </article>)
+// export function Card ({
+//   img,
+//   title,
+//   children
+// }: React.PropsWithChildren<CardProps>) {
+//   return (
+//     <article>
+//       <img data-card-img src={img.src} alt={img.alt} />
+//       Hello World2
+//     </article>
+//   )
+// }
