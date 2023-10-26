@@ -1,0 +1,63 @@
+{
+    "compilerOptions": {
+        /* Base Options */
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "verbatimModuleSyntax": true,
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+
+        /* Strictness */
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+
+        /* If transpiling with TypeScript: */
+        // "moduleResolution": "NodeNext",
+        // "module": "Es2022",
+        // "outDir": "dist",
+        // "sourceMap": true,
+
+        /* If NOT transpiling with TypeScript: */
+        "moduleResolution": "Bundler",
+        "module": "ESNext",
+        "noEmit": true,
+
+        /* If your code runs in the DOM: */
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+        /* If your code doesn't run in the DOM: */
+        // "lib": ["ES2022"]
+
+        /* If you're building a library: */
+        "declaration": true,
+
+        /* If you're building for a library in a monorepo: */
+        // "composite": true,
+        // "declarationMap": true
+
+        /* If you're using React */
+        "jsx": "react",
+        "paths": {
+            "@src/*": ["./src/*"]
+        },
+
+        /* Optional Parameters */
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+    },
+    "exclude": ["node_modules"],
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./src/**/*.js",
+        "./src/**/*.jsx",
+        "./stories/**/*.tsx",
+    ]
+}
