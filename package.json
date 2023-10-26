@@ -38,5 +38,9 @@
   },
   "publishConfig": {
     "@gabyquiles:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.0",
+    "lit": "^3.0.0"
   }
 }
