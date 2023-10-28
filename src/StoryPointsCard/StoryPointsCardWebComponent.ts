@@ -24,10 +24,6 @@ export class StoryPointsCard extends LitElement {
       font-size: 2em;
     }
   `;
-    
-  // static properties: PropertyDeclarations = {
-  //   value: {type: String}
-  // };
 
   @property() value = '';
 
@@ -35,16 +31,3 @@ export class StoryPointsCard extends LitElement {
       return html`<div class="card"><span>${this.value}</span></div>`;
   }
 }
-
-// declare global {
-//     interface HTMLElementTagNameMap {
-//         'storypoints-card': StoryPointsCard
-//     }
-// }
-// declare module "react" {
-//    namespace JSX {
-//      interface IntrinsicElements {
-//        'storypoints-card': WebComponentProps<StoryPointsCard>;
-//      }
-//    }
-//  }
