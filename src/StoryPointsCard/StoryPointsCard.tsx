@@ -5,7 +5,8 @@ import { StoryPointsCard as StoryPointsCardWC } from './StoryPointsCardWebCompon
 export const StoryPointsCard = createComponent<StoryPointsCardWC>({
     react: React,
     tagName: 'storypoints-card',
-    elementClass: StoryPointsCardWC
+    elementClass: StoryPointsCardWC,
+    displayName: 'StoryPointsCard'
 })
 
 interface StoryPointsCardProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {

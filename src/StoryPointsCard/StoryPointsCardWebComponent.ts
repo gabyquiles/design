@@ -1,6 +1,6 @@
 // import { WebComponentProps } from '@lit/react';
-import {html, css, LitElement, type PropertyDeclarations} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+import {html, css, LitElement} from 'lit';
+import {customElement} from 'lit/decorators.js';
 
 @customElement('storypoints-card')
 export class StoryPointsCard extends LitElement {
@@ -25,9 +25,11 @@ export class StoryPointsCard extends LitElement {
     }
   `;
 
-  @property() value = '';
-
   render() {
-      return html`<div class="card"><span>${this.value}</span></div>`;
+      return html`
+        <div class="card">
+          <slot></slot>
+        </div>
+      `;
   }
 }
