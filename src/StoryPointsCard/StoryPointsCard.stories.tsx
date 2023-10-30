@@ -11,7 +11,7 @@ function StoryPointsCardWithValue({value}: {value: string}) {
 }
 
 const meta: Meta = {
-    title: 'StoryPointsCard',
+    title: 'Atoms/StoryPointsCard',
     component: StoryPointsCardWithValue,
 }
 

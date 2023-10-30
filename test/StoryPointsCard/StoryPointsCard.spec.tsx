@@ -2,7 +2,7 @@ import * as React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { screen } from 'shadow-dom-testing-library';
 
-import StoryPointsCard from "../../src/StoryPointsCard/StoryPointsCard"
+import { StoryPointsCard } from "../../src/StoryPointsCard"
 
 describe('StoryPointsCard', () => {
     it('renders correctly', () => {
